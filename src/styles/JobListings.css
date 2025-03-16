@@ -1,0 +1,145 @@
+/* Job Listings Page - Dark Theme & Modern Layout */
+.job-listings-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  margin-top: 120px;
+  padding: 40px;
+  background: #121212;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Page Title */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Job Listings Grid */
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Job Card */
+.job-card {
+  padding: 25px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 18px rgba(255, 255, 255, 0.2);
+}
+
+/* Job Title */
+.job-card h2 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Job Details */
+.job-card p {
+  font-size: 1rem;
+  color: #bbb;
+  margin: 5px 0;
+}
+
+/* Button Section - Centered */
+.job-card .view-details {
+  display: inline-block;
+  width: 80%;
+  margin-top: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff8c00, #ff4500);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.job-card .view-details:hover {
+  background: linear-gradient(135deg, #ff4500, #ff8c00);
+  opacity: 0.9;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .job-listings-container {
+    max-width: 95%;
+    padding: 30px;
+  }
+
+  ul {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .job-listings-container {
+    max-width: 100%;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  ul {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .job-card {
+    padding: 20px;
+  }
+
+  .view-details {
+    font-size: 15px;
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .job-listings-container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  ul {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card {
+    padding: 18px;
+  }
+
+  .view-details {
+    font-size: 14px;
+    padding: 10px 16px;
+    width: 90%;
+  }
+}

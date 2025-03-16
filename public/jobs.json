@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "company": "Tech Corp",
+    "location": "Bangalore, India",
+    "salary": "₹12,00,000 per year"
+  },
+  {
+    "id": 2,
+    "title": "Backend Developer",
+    "company": "Code Solutions",
+    "location": "Hyderabad, India",
+    "salary": "₹15,00,000 per year"
+  },
+  {
+    "id": 3,
+    "title": "Full Stack Developer",
+    "company": "Innovate Tech",
+    "location": "Mumbai, India",
+    "salary": "₹14,00,000 per year"
+  },
+  {
+    "id": 4,
+    "title": "Data Scientist",
+    "company": "AI Labs",
+    "location": "Pune, India",
+    "salary": "₹18,00,000 per year"
+  },
+  {
+    "id": 5,
+    "title": "UI/UX Designer",
+    "company": "Creative Minds",
+    "location": "Delhi, India",
+    "salary": "₹10,00,000 per year"
+  },
+  {
+    "id": 6,
+    "title": "Mobile App Developer",
+    "company": "Appify",
+    "location": "Chennai, India",
+    "salary": "₹13,00,000 per year"
+  },
+  {
+    "id": 7,
+    "title": "DevOps Engineer",
+    "company": "CloudOps",
+    "location": "Bangalore, India",
+    "salary": "₹16,00,000 per year"
+  },
+  {
+    "id": 8,
+    "title": "Cybersecurity Analyst",
+    "company": "SecureNet",
+    "location": "Kolkata, India",
+    "salary": "₹17,50,000 per year"
+  },
+  {
+    "id": 9,
+    "title": "Machine Learning Engineer",
+    "company": "DeepAI",
+    "location": "Hyderabad, India",
+    "salary": "₹20,00,000 per year"
+  },
+  {
+    "id": 10,
+    "title": "Cloud Engineer",
+    "company": "SkyTech",
+    "location": "Noida, India",
+    "salary": "₹15,50,000 per year"
+  },
+  {
+    "id": 11,
+    "title": "Blockchain Developer",
+    "company": "CryptoHub",
+    "location": "Ahmedabad, India",
+    "salary": "₹19,00,000 per year"
+  },
+  {
+    "id": 12,
+    "title": "AI Researcher",
+    "company": "Neural Net",
+    "location": "Bangalore, India",
+    "salary": "₹22,00,000 per year"
+  },
+  {
+    "id": 13,
+    "title": "Game Developer",
+    "company": "GameVerse",
+    "location": "Mumbai, India",
+    "salary": "₹14,50,000 per year"
+  },
+  {
+    "id": 14,
+    "title": "Embedded Systems Engineer",
+    "company": "ChipTech",
+    "location": "Hyderabad, India",
+    "salary": "₹13,75,000 per year"
+  },
+  {
+    "id": 15,
+    "title": "Network Engineer",
+    "company": "NetSecure",
+    "location": "Chennai, India",
+    "salary": "₹12,50,000 per year"
+  },
+  {
+    "id": 16,
+    "title": "Site Reliability Engineer",
+    "company": "CloudForce",
+    "location": "Pune, India",
+    "salary": "₹16,80,000 per year"
+  },
+  {
+    "id": 17,
+    "title": "Software Engineer",
+    "company": "CodeMasters",
+    "location": "Delhi, India",
+    "salary": "₹14,00,000 per year"
+  }
+]
