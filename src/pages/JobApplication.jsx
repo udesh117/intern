@@ -11,6 +11,13 @@ const JobApplication = () => {
     coverLetter: "",
   });
 
+  const [errors, setErrors] = useState({
+    fullName: "",
+    email: "",
+    resume: "",
+    coverLetter: "",
+  });
+
   const navigate = useNavigate();
 
   const handleInputChange = (event) => {
@@ -28,7 +35,42 @@ const JobApplication = () => {
     }));
   };
 
+  const validateForm = () => {
+    let isValid = true;
+    let errors = {};
+
+    if (!formData.fullName) {
+      errors.fullName = "Full Name is required.";
+      isValid = false;
+    }
+
+    if (!formData.email) {
+      errors.email = "Email is required.";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = "Please enter a valid email address.";
+      isValid = false;
+    }
+
+    if (!formData.resume) {
+      errors.resume = "Resume is required.";
+      isValid = false;
+    }
+
+    if (!formData.coverLetter) {
+      errors.coverLetter = "Cover letter is required.";
+      isValid = false;
+    }
+
+    setErrors(errors);
+    return isValid;
+  };
+
   const handleApply = () => {
+    if (!validateForm()) {
+      return; // Stop form submission if validation fails
+    }
+
     const newApplication = {
       ...formData,
       jobTitle: "Frontend Developer", // Replace with actual job title
@@ -60,6 +102,7 @@ const JobApplication = () => {
         value={formData.fullName} 
         onChange={handleInputChange} 
       />
+      {errors.fullName && <p className="error">{errors.fullName}</p>}
 
       <input 
         type="email" 
@@ -69,6 +112,7 @@ const JobApplication = () => {
         value={formData.email} 
         onChange={handleInputChange} 
       />
+      {errors.email && <p className="error">{errors.email}</p>}
 
       <div className="file-drop">
         <label htmlFor="resume-upload" className="drop-zone">
@@ -81,6 +125,7 @@ const JobApplication = () => {
           onChange={handleFileChange}
         />
         {formData.resume && <p className="file-name">{formData.resume.name}</p>}
+        {errors.resume && <p className="error">{errors.resume}</p>}
       </div>
 
       <input 
@@ -99,6 +144,7 @@ const JobApplication = () => {
         value={formData.coverLetter} 
         onChange={handleInputChange}
       ></textarea>
+      {errors.coverLetter && <p className="error">{errors.coverLetter}</p>}
 
       <button className="apply-button" onClick={handleApply}>
         Apply Now

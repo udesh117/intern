@@ -92,3 +92,9 @@ button:hover {
   transform: scale(1.05);
   opacity: 0.9;
 }
+
+.error {
+  color: red;
+  font-size: 18px;
+  margin-top: 5px;
+}
